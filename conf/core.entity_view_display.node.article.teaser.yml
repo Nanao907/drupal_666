@@ -1,4 +1,4 @@
-uuid: dc6e76d1-4c50-430e-8063-e4afae440372
+uuid: f3bcbd6d-e78e-4594-997c-ce7abef6bee9
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,8 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.article.body
     - field.field.node.article.comment
-    - field.field.node.article.field_description
     - field.field.node.article.field_image
+    - field.field.node.article.field_lead
     - field.field.node.article.field_tags
     - image.style.medium
     - node.type.article
@@ -21,13 +21,6 @@ targetEntityType: node
 bundle: article
 mode: teaser
 content:
-  field_description:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 0
-    region: content
   field_image:
     type: image
     label: hidden
@@ -38,6 +31,13 @@ content:
         attribute: lazy
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_lead:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
     region: content
   field_tags:
     type: entity_reference_label

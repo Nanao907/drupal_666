@@ -1,12 +1,12 @@
-uuid: 6e460e27-05ef-444e-946a-6426806b1a6a
+uuid: af1049cb-bbc4-4bf3-994f-7f454d4700ab
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.article.body
     - field.field.node.article.comment
-    - field.field.node.article.field_description
     - field.field.node.article.field_image
+    - field.field.node.article.field_lead
     - field.field.node.article.field_tags
     - image.style.thumbnail
     - node.type.article
@@ -33,14 +33,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_description:
-    type: string_textarea
-    weight: 1
-    region: content
-    settings:
-      rows: 10
-      placeholder: ''
-    third_party_settings: {  }
   field_image:
     type: image_image
     weight: 2
@@ -48,6 +40,14 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_lead:
+    type: string_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
     third_party_settings: {  }
   field_tags:
     type: entity_reference_autocomplete_tags

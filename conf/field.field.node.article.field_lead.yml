@@ -1,12 +1,12 @@
-uuid: 3cedb7c6-ea0a-4f51-a360-3858e712e356
+uuid: 609a0dd0-c8a4-4800-88b8-c72246f796c1
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_description
+    - field.storage.node.field_lead
     - node.type.article
-id: node.article.field_description
-field_name: field_description
+id: node.article.field_lead
+field_name: field_lead
 entity_type: node
 bundle: article
 label: Lead
